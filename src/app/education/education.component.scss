@@ -1,0 +1,10 @@
+img {
+    padding-top: 2em;
+    max-height: 100%;
+
+    + * {
+        float: right;
+        width: 80%;
+        padding: 1.75em 0;
+    }
+}

@@ -1,0 +1,28 @@
+:host {
+    display: block;
+    // padding: 10px 0 0 10px;
+}
+
+/deep/ rect {
+  fill: #ff8c00;
+}
+
+/deep/ text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+[data-axis] text {
+  font: 10px sans-serif;
+}
+
+[data-axis] path,
+[data-axis] line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+// [data-axis=x] path {
+//   display: none;
+// }

@@ -1,0 +1,6 @@
+<header>Quotes About Me</header>
+<hr>
+<blockquote *ngFor="let quote of quotes | async">
+    "{{ quote.quote }}"
+    <cite>{{ quote.by }} on {{ quote.when | date:'mediumDate' }}</cite>
+</blockquote>

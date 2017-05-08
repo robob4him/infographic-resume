@@ -1,0 +1,6 @@
+<header>Employment</header>
+<hr>
+<dl *ngFor="let record of employment | async">
+  <dt>{{ record.name }}</dt>
+  <dd>{{ record.level }}</dd>
+</dl>

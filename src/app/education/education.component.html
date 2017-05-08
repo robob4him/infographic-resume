@@ -1,0 +1,10 @@
+<header>Education</header>
+<hr>
+<div *ngFor="let edu of educationHistory | async">
+  <img src="/assets/education.png">
+  <div>
+    <div>{{ edu.major }}</div>
+    <div *ngIf="edu.minor">{{ edu.minor }}</div>
+    <div>{{ edu.college }}</div>
+  </div>
+</div>
